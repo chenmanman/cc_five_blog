@@ -1,0 +1,138 @@
+<div  class="row" >
+
+	<div class="col-md-2"  style="height:{{bacend_aparameter.winHeight}};background-color: #0b0b0b;padding-right: 0px; padding-left: 0px;">
+
+        <div ng-include="'../views/backendleft.html'"></div>
+	</div>
+
+
+	<div class="col-md-10" >
+
+
+		<div  class="row" style="margin-top: 100px;">
+			<div class="col-md-4">
+
+
+				<div style="height:150px; margin-top:50px;" class=" panel-background_core">
+
+
+							<div style="width:70%;margin-left:10%;">
+
+								<button type="button" class="btn btn-success btn-block"    ng-click="blogcate_add_cli();">新&nbsp;增&nbsp;类&nbsp;型&nbsp;</button>
+							</div>
+					        <br>
+
+
+							<div style="width:70%;margin-left:10%;">
+
+								<button type="button" class="btn  btn-block"    ng-click="blogcate_list_cli();">类&nbsp;型&nbsp;列&nbsp;表&nbsp;</button>
+							</div>
+
+
+				</div>
+
+
+			</div>
+			<div class="col-md-7">
+
+					<div style="height:100%;margin-top: 40px;display:{{bacend_aparameter.cate_list_show}}"  >
+						<ul  >
+							<li style="list-style:none;"    ng-repeat="cateinfo in categoryInfoLists">
+
+								<div  style="float:left;width:100%;margin-top:1%;color:#79808b;">
+									<span   style="float: left;margin-top: 9px;">{{cateinfo.modifydate  | date : 'yyyy-MM-dd HH:mm'}}</span>
+									<i  class="glyphicon glyphicon-menu-right"   style="margin-left: 3%;float: left;margin-top: 9px;"></i>
+									<span  style="float: left;margin-top: 9px;margin-left: 3%;">{{cateinfo.blogCategory_code}}</span>
+									<input  class="form-control" placeholder="{{cateinfo.blogCategory_name}}" ng-model="categoryname_new" value="{{categoryname_new}}"
+											style="width:40%;margin-left: 3%;float: left;">
+									<i  class="glyphicon glyphicon-edit" ng-click="blogCategory_update(cateinfo._id,categoryname_new)"  style="margin-left: 3%;float: left;margin-top: 9px;"></i>
+									<i  class="glyphicon glyphicon-remove"   ng-click="blogCategory_del(cateinfo._id)" style="margin-left: 3%;float: left;margin-top: 9px;"></i>
+								</div>
+								<br><br>
+
+
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div style="height:100%;margin-top: 40px;display:{{bacend_aparameter.cate_add_show}}"  >
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label  class="col-sm-4 control-label">分类名称:</label>
+								<div class="col-sm-7">
+									<input  class="form-control"
+											ng-model="postcate.blogCategory_name"
+											ng-maxlength="10"
+											placeholder="catename" autofocus="autofocus">
+								</div>
+							</div>
+							<div class="form-group">
+								<label  class="col-sm-4 control-label">分类编码:</label>
+								<div class="col-sm-7">
+									<input  class="form-control"
+											ng-model="postcate.blogCategory_code"
+											placeholder="catecode"
+											>
+								</div>
+							</div>
+							<div class="form-group">
+								<label  class="col-sm-4 control-label">备注:</label>
+								<div class="col-sm-7">
+									<textarea class="form-control"  ng-model="postcate.blogCategory_desc" rows="3" placeholder="cateMemo"></textarea>
+								</div>
+							</div>
+							<div  style="width:100%;text-align:center;">
+
+								<div style="width:50%;margin-left:40%;">
+
+									<button type="button" class="btn btn-success btn-block"    ng-click="blogcate_sub_cli();">提&nbsp;交</button>
+								</div>
+
+							</div>
+
+
+
+						</div>
+
+
+					</div>
+
+			</div>
+
+
+		</div>
+
+
+
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

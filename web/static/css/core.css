@@ -1,0 +1,142 @@
+.list-cards {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin: 0 4px;
+	padding: 0 4px;
+	z-index: 1;
+	min-height: 0
+}
+
+.list-cards::-webkit-scrollbar-button:end {
+	display: block;
+	height: 4px;
+	width: 4px
+}
+
+
+u-fancy-scrollbar::-webkit-scrollbar {
+	display: none
+}
+	
+.u-fancy-scrollbar {
+	-webkit-transform: translate3d(0,0,0)
+}
+
+
+.u-fancy-scrollbar {
+	-webkit-overflow-scrolling: touch
+}
+
+
+.u-fancy-scrollbar::-webkit-scrollbar {
+	height: 9px;
+	width: 9px
+}
+
+.u-fancy-scrollbar::-webkit-scrollbar-button:end:increment,.u-fancy-scrollbar::-webkit-scrollbar-button:start:decrement {
+	background: 0 0;
+	display: none
+}
+
+
+.u-fancy-scrollbar::-webkit-scrollbar-track-piece {
+	background: #d6dadc
+}
+
+.u-fancy-scrollbar::-webkit-scrollbar-track-piece:vertical:start {
+	border-radius: 5px 5px 0 0
+}
+
+.u-fancy-scrollbar::-webkit-scrollbar-track-piece:vertical:end {
+	border-radius: 0 0 5px 5px
+}
+
+.u-fancy-scrollbar::-webkit-scrollbar-track-piece:horizontal:start {
+	border-radius: 5px 0 0 5px
+}
+
+.u-fancy-scrollbar::-webkit-scrollbar-track-piece:horizontal:end {
+	border-radius: 0 5px 5px 0
+}
+
+.u-fancy-scrollbar::-webkit-scrollbar-thumb:horizontal,.u-fancy-scrollbar::-webkit-scrollbar-thumb:vertical {
+	background: #c4c9cc;
+	border-radius: 5px;
+	display: block;
+	height: 50px
+}
+
+
+u-fancy-scrollbar::-webkit-scrollbar {
+	display: none
+}
+.u-fancy-scrollbar {
+		-webkit-overflow-scrolling: initial
+	}
+	
+	
+.panel-background_core {	
+	border: 1px solid rgba(255,255,255,0.4);
+	background-color:rgba(255,255,255,0.4); 
+	border-radius:5px; 
+	padding:10px; 
+	transition:transform 0.3s ease-in;
+	
+	
+}
+	
+.replyHidden_true {
+    display: none;
+}
+
+.replyHidden_false {
+
+}	
+	
+.accordion_left {
+	background-color: #0b0b0b;
+	height:45px;
+	color:#79808b;	
+	cursor:pointer;
+	line-height: 45px;
+	font-size:15px;
+	
+}
+	
+.accordion_left:hover{	
+background-color: #f49484;
+color:#ffffff;
+		
+}
+	
+.accordion_left_a {
+	text-decoration:none;cursor:pointer;color:#79808b;
+	
+}		
+	
+.accordion_left_a:hover {
+	text-decoration:none;
+	background-color: #f49484;
+     color:#ffffff;
+	
+}		
+	
+.icon_a {
+	color:#79808b;
+	
+}		
+	
+.icon_a:hover {
+    color:#3333FF;
+	
+}	
+
+	
+	
+	
+	
+	

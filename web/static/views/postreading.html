@@ -1,0 +1,78 @@
+<div  class="row" >
+	<nav class="navbar navbar-inverse navbar-fixed-top" >
+		<div class="container-fluid">
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"  >
+
+				<ul class="nav navbar-nav navbar-right" style="margin-right: 18%;">
+					<li class="navbar-header"><a class="navbar-brand" href="#">CanvasChen Blog</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Technology <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#/post:1001">技术积累01</a></li>
+
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ReadingKeep <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#/post:2001">阅读积累01</a></li>
+
+						</ul>
+					</li>
+					<li><a href="/#/about">About</a></li>
+					<li ><a  href="#">SinaLink</a></li>
+					<li ><a  href="/#/backend">Backend</a></li>
+
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+	<div  class="col-md-2"></div>
+	<div  class="col-md-8">
+		<br><br><br><br><br>
+		<div>
+
+			<h3>{{post_read_info.post_reading_info_title}}</h3>
+		</div>
+
+		<br><br>
+		<div id="post_content_modal">
+		</div>
+
+
+
+			<nav>
+				<ul class="pager">
+					<li class="previous">
+						<span   ng-click="back_to_postlist_cli(post_read_info.post_reading_cate_code);" style="cursor:pointer; text-decoration:none;color: #337ab7;
+						">返回文章列表： {{post_read_info.post_reading_cate_name}}</span>
+					</li>
+					<li class="next">
+						<span   ng-click="post_reading_cli(post_read_info.post_reading_next_id);" style="cursor:pointer; text-decoration:none;color: #337ab7;
+						">next： {{post_read_info.post_reading_next_title}}</span>
+
+					</li>
+				</ul>
+			</nav>
+		<br>
+
+
+		<div  style="text-align: center;color: #AAA; font-size: 11px;" >
+
+			苏ICP备15024208号-1 ,Copyright  <i class="glyphicon glyphicon-copyright-mark "></i> 2015 ,All Rights Reserved.
+		</div>
+		<br>
+
+	</div>
+	<div  class="col-md-2"></div>
+
+
+
+
+
+
+</div>
