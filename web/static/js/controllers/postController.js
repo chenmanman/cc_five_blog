@@ -4,6 +4,7 @@ define(['controllers/controllers'], function (controllers) {
     controllers.controller('postcontrol', ['$routeParams','$scope','$http','$window','$rootScope',function ($routeParams,$scope,$http,$window,$rootScope) {
         var ccode=$routeParams.catecode;
 
+        console.log("good day");
         ccode= ccode.replace(':','');
 
         $http.get('/postlist_cate'+ccode).success(function (data) {
